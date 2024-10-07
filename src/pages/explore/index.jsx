@@ -1,5 +1,5 @@
 export default function Explore() {
     return (
-        <div>explore</div>
+        <div>vay amcalar geldiler   q</div>
     )
 }
