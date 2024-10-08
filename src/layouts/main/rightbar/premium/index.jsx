@@ -1,4 +1,4 @@
-import Button from '../buttons'
+import Button from '../../../../components/buttons'
 export default function Premium() {
     return (
         <section

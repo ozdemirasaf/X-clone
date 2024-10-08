@@ -208,5 +208,78 @@ export const topics = [
             value: "Starlink"
         },
         postCount: 13663
+    },
+    {
+        title: "Türkiye tarihinde gündemde",
+        topic: {
+            type: 'tag',
+            value: "DiscordKapatılsın"
+        },
+        postCount: 17500
+    },
+    {
+        title: "Türkiye tarihinde gündemde",
+        topic: {
+            type: 'tag',
+            value: "Aysenurhalil"
+        },
+        postCount: 36100
+    },
+    {
+        title: "Politika",
+        topic: {
+            type: 'tag',
+            value: "Köfteci Yusuf"
+        },
+        postCount: 22400
+    },
+    {
+        title: "İş & Finans",
+        topic: {
+            type: 'tag',
+            value: "Telegram"
+        },
+        postCount: 21400
+    },
+    {
+        title: "Türkiye tarihinde gündemde",
+        topic: {
+            type: 'query',
+            value: "Ecrin"
+        },
+        postCount: 50100
+    },
+    {
+        title: "Türkiye tarihinde gündemde",
+        topic: {
+            type: 'query',
+            value: "Ebu Ubeyde"
+        },
+        postCount: 31500
+    },
+    {
+        title: "İş & Finans",
+        topic: {
+            type: 'query',
+            value: "viop"
+        },
+        postCount: 2058
+    },
+    {
+        title: "Türkiye tarihinde gündemde",
+        topic: {
+            type: 'tag',
+            value: "KızılGoncalar"
+        },
+        postCount: 24000
+    },
+    {
+        title: "Türkiye tarihinde gündemde",
+        topic: {
+            type: 'tag',
+            value: "vahset"
+        },
+        postCount: 17600
     }
+
 ]
