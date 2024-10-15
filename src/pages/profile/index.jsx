@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom"
+import {useParams} from "react-router-dom";
 
 export default function Profile() {
 
-    const { slug } = useParams()
+	const {slug} = useParams()
 
-    return (
-        <div>
-            Profile Page!! {slug}
-        </div>
-    )
+	return (
+		<div>
+			profile page - {slug}
+		</div>
+	)
 }

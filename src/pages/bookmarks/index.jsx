@@ -1,7 +1,7 @@
-export default function BookMarks() {
-    return (
-        <div>
-            Bookmarks
-        </div>
-    )
+export default function Bookmarks() {
+	return (
+		<div>
+			bookmarks component
+		</div>
+	)
 }

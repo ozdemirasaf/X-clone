@@ -1,7 +1,7 @@
 export default function Lists() {
-    return (
-        <div>
-            Lists!!
-        </div>
-    )
+	return (
+		<div>
+			lists component
+		</div>
+	)
 }

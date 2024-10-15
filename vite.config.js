@@ -1,13 +1,13 @@
-import { defineConfig } from 'vite'
+import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import * as paht from 'path'
+import * as path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '~': paht.resolve(__dirname, 'src')
-    },
-  },
+	plugins: [react()],
+	resolve: {
+		alias: {
+			'~': path.resolve(__dirname, 'src'),
+		},
+	},
 })

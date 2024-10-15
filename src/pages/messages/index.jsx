@@ -1,7 +1,7 @@
 export default function Messages() {
-    return (
-        <div>
-            Message !!
-        </div>
-    )
+	return (
+		<div>
+			messages component
+		</div>
+	)
 }

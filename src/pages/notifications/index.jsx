@@ -1,5 +1,7 @@
 export default function Notifications() {
-    return (
-        <div>Notifications</div>
-    )
+	return (
+		<div>
+			notifications component!
+		</div>
+	)
 }

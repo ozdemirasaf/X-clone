@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-[color:var(--background-primary)] text-[color:var(--color-base)] text-[15px];
+}
+
+.shadow-box {
+    box-shadow: var(--box-shadow);
+}
+
+/*
+    genislik = 1265px
+    sol sidebar = 275px
+    sag sidebar = 350px
+    content alani = auto
+ */
