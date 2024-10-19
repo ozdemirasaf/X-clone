@@ -71,6 +71,9 @@ export default function AppearanceModal({ close }) {
 											type="button"
 											onClick={(e) => {
 												setFontSize(fs)
+												console.log(
+													e.currentTarget.offsetLeft
+												)
 											}}
 											className={classNames("before:absolute before:inset-0 before:rounded-full before:hover:bg-[color:var(--color-primary)] before:opacity-10 w-8 h-8 rounded-full flex items-center justify-center relative", {
 												"active-font-size": fs === fontSize
@@ -127,6 +130,7 @@ export default function AppearanceModal({ close }) {
 									setBackgroundColor({
 										name: 'light',
 										primary: '#fff',
+										primaryAlpha: '#ffffffa6',
 										secondary: '#f7f9f9',
 										third: '#eff3f4',
 										modal: '#00000066'
@@ -167,6 +171,7 @@ export default function AppearanceModal({ close }) {
 									setBackgroundColor({
 										name: 'dark',
 										primary: '#15202b',
+										primaryAlpha: '#15202ba6',
 										secondary: '#1e2732',
 										third: '#263340',
 										modal: '#5b708366'
@@ -207,6 +212,7 @@ export default function AppearanceModal({ close }) {
 									setBackgroundColor({
 										name: 'darker',
 										primary: '#000',
+										primaryAlpha: '#000000a6',
 										secondary: '#16181c',
 										third: '#212327',
 										modal: '#5b708366'
