@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import Button from "~/components/button";
-import { useAppearance } from "~/store/appearance/hooks";
+import {useAppearance} from "~/store/appearance/hooks";
 import classNames from "classnames";
-import { setBackgroundColor, setBoxShadow, setColor, setFontSize } from "~/store/appearance/actions";
-import { colors, fontSizes } from "~/utils/consts";
-import { useEffect, useState } from "react";
+import {setBackgroundColor, setBoxShadow, setColor, setFontSize} from "~/store/appearance/actions";
+import {colors, fontSizes} from "~/utils/consts";
+import {useEffect, useState} from "react";
 
-export default function AppearanceModal({ close }) {
+export default function AppearanceModal({close}) {
 
-	const { backgroundColor, color, fontSize } = useAppearance()
+	const {backgroundColor, color, fontSize} = useAppearance()
 
 	const [fontSizePercent, setFontSizePercent] = useState(0)
 
@@ -50,7 +50,7 @@ export default function AppearanceModal({ close }) {
 							<div className="text-[color:var(--color-base)] leading-5">
 								X'in merkezinde, tıpkı bunun gibi gönderi denen kısa mesajlar yatar. Gönderiler; fotoğraflar, videolar,
 								bağlantılar, metinler, etiketler ve <Link className="text-[#1d9bf0] hover:underline"
-									to="/x">@X</Link> gibi bahsetmeler içerebilir.
+																													to="/x">@X</Link> gibi bahsetmeler içerebilir.
 							</div>
 						</div>
 					</div>
@@ -63,8 +63,8 @@ export default function AppearanceModal({ close }) {
 						<div className="bg-[color:var(--background-secondary)] p-4 rounded-2xl flex items-center gap-5">
 							<div className="text-[0.813rem]">Aa</div>
 							<div className="h-1 bg-[color:var(--color-secondary)] flex-1 rounded-full relative">
-								<div style={{ width: fontSizePercent }}
-									className="absolute h-full top-0 left-0 rounded-full bg-[color:var(--color-primary)]" />
+								<div style={{width: fontSizePercent}}
+										 className="absolute h-full top-0 left-0 rounded-full bg-[color:var(--color-primary)]"/>
 								<div className="flex justify-between absolute w-[calc(100%+16px)] -top-3.5 -left-[8px]">
 									{fontSizes.map(fs => (
 										<button
@@ -82,7 +82,7 @@ export default function AppearanceModal({ close }) {
 											<div className={classNames("w-3 h-3 rounded-full bg-[color:var(--color-secondary)]", {
 												"w-4 h-4": fs === fontSize,
 												"!bg-[color:var(--color-primary)]": fs <= fontSize
-											})} />
+											})}/>
 										</button>
 									))}
 								</div>
@@ -103,13 +103,13 @@ export default function AppearanceModal({ close }) {
 											...c
 										})
 									}}
-									style={{ '--bg': c.primary }}
+									style={{'--bg': c.primary}}
 									className="w-[40px] h-[40px] rounded-full bg-[color:var(--bg)] flex items-center justify-center text-white"
 								>
 									{color.primary === c.primary && (
 										<svg viewBox="0 0 24 24" width={25}>
 											<path fill="currentColor"
-												d="M9.64 18.952l-5.55-4.861 1.317-1.504 3.951 3.459 8.459-10.948L19.4 6.32 9.64 18.952z" />
+														d="M9.64 18.952l-5.55-4.861 1.317-1.504 3.951 3.459 8.459-10.948L19.4 6.32 9.64 18.952z"/>
 										</svg>
 									)}
 								</button>

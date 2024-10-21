@@ -20,7 +20,7 @@ export default function Home() {
 					<ForYou />
 				</Tab.Content>
 				<Tab.Content id="followings">
-					2. content
+
 				</Tab.Content>
 			</Tab>
 		</>

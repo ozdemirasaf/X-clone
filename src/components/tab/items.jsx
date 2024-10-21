@@ -1,7 +1,7 @@
-export default function Items({ children }) {
-    return (
-        <div className="flex">
-            {children}
-        </div>
-    )
+export default function Items({children}) {
+	return (
+		<div className="flex">
+			{children}
+		</div>
+	)
 }

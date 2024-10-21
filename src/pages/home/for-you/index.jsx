@@ -1,10 +1,21 @@
+import { posts as postData } from "~/mock/posts";
 import Post from "~/components/post";
-import { posts } from "~/mock/posts";
+import { WVList } from "virtua";
+import { useState } from "react";
 
 export default function ForYou() {
-    return (
-        <>
-            {posts.map(post => <Post post={post} key={post.id} />)}
-        </>
-    )
+
+	const [posts, setPosts] = useState(postData)
+
+	return (
+		<WVList
+			onRangeChange={(start, end) => {
+				if (end + 1 === posts.length) {
+					setPosts(prev => [...prev, ...postData])
+				}
+			}}
+		>
+			{posts.map((post, key) => <Post post={post} key={post.id + key} />)}
+		</WVList>
+	)
 }
