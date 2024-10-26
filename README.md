@@ -2,6 +2,8 @@
 
 Bu proje, X platformu benzeri bir kullanıcı arayüzü oluşturmayı amaçlayan bir React uygulamasıdır. Tasarım ve kullanıcı deneyimi üzerine odaklanılmıştır. Ayrıca Redux kullanarak temalar arası geçiş ve görünüm ayarları eklenmiştir.
 
+Projenin docker işlemleri için yardım eden [@mtaplamaci](https://github.com/mtaplamaci) abime teşekkürü bir borç bilirim. 
+
 ## Özellikler
 
 - **Tema Değişimi** : Redux state yönetimi ile dark ve light temalar arasında geçiş yapılabilir.
