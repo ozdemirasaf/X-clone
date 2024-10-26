@@ -24,6 +24,19 @@ Bu proje, X platformu benzeri bir kullanıcı arayüzü oluşturmayı amaçlayan
    ```bash
    npm run dev
 
+## Eğer Docker Kullanıyorsanız;
+
+1. Docker Hub Üzerinden İmage Çekme:
+   ```bash
+   docker pull muhammed81/my-vite-app:latest
+
+2. Container Ayağa Kaldırma:
+   
+   bu adımda 8080:80 ifadesi hangi portu container host un hangi portuna bağlayacağımı bildirir dilerseniz değiştirebilirsiniz.
+   ```bash
+   docker run -p 8080:80 muhammed81/my-vite-app
+Tarayıcınızdan localhost:8080 adresini ziyaret ediniz.
+
 ## Kullanılan Teknolojiler
 
 - **React** : Kullanıcı arayüzü geliştirmek için.
@@ -57,6 +70,20 @@ This project is a React application aimed at creating a user interface similar t
 3. Run the Project:
    ```bash
    npm run dev
+
+## If You Are Using Docker;
+
+1. Pull Image From Docker Hub:
+   ```bash
+   docker pull muhammed81/my-vite-app:latest
+
+2. Running The Container:
+   
+   in this step the expression 8080:80 tells me which port to connect to which port of the container host, you can change it if you wish.
+   ```bash
+   docker run -p 8080:80 muhammed81/my-vite-app
+   
+Visit localhost:8080 in your browser.
 
 ### Technologies Used
 
